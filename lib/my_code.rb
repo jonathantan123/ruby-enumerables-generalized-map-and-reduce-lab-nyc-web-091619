@@ -15,10 +15,10 @@ def reduce(array, starting_value = nil)
     sum = array[0]
     i = 1 
   end 
+  
     while i< array.length do 
       sum = yield(sum, array[length])
       i+=1 
-
     end 
     sum 
   end 
